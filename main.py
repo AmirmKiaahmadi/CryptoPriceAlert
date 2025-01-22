@@ -97,7 +97,7 @@ def job_wrapper_tether():
 
 
 # Schedule tasks
-schedule.every(30).seconds.do(job_wrapper_crypto)  # Crypto prices every 1 hour
+schedule.every(8).hours.do(job_wrapper_crypto)  # Crypto prices every 1 hour
 schedule.every(8).hours.do(job_wrapper_tether)  # Tether price every 8 hours
 
 # Main loop
